@@ -5,6 +5,7 @@ import mountain from "./mountain.jpg"
 
 
 const StyledCard = Styled.div`
+
     display: flex;
     justify-content: space-evenly;
     align-items:center;
@@ -13,7 +14,6 @@ const StyledCard = Styled.div`
     background: #383A45;
     padding: 1rem;
     border-radius: 0.5rem;
-
 
     div{
         max-width: 22.4375rem;
@@ -33,8 +33,6 @@ const StyledCard = Styled.div`
         line-height: 36px;
         letter-spacing: 0em;
         text-align: left;
-
-        
     }
     p{
         color: #8D91A6;
@@ -45,16 +43,15 @@ const StyledCard = Styled.div`
         line-height: 24px;
         letter-spacing: 0em;
         text-align: left;
-        
     }
 `
 
-const Card = () => (
+const Card = (props) => (
     <StyledCard>
         <img src={mountain} alt="a mountain"/>
         <div>
-            <h2>An Above Average Experience</h2>
-            <p>Travel to the premiere mountain tops of New Zealand with our guided tours. Take in the majestic scenary and witness beauty.</p>
+            <h2>{props.title}</h2>
+            <p>{props.content}</p>
         </div>
     </StyledCard>
 )

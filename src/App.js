@@ -4,9 +4,6 @@ import { createGlobalStyle } from 'styled-components'
 import Card from './Card.js'
 
 const GlobalStyle = createGlobalStyle`
-  *,*::before,*::after{
-    box-sizing:border-box;
-  }
 
   body{
       background: #2d2e36;
@@ -22,7 +19,10 @@ function App() {
   return (
     <div>
       <GlobalStyle/>
-      <Card/>
+      <Card
+        title="An Above Average Experience"
+        content="Travel to the premiere mountain tops of New Zealand with our guided tours. Take in the majestic scenary and witness beauty."
+       />
     </div>
   );
 }
