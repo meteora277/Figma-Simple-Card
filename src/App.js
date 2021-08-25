@@ -23,6 +23,7 @@ function App() {
         title="An Above Average Experience"
         content="Travel to the premiere mountain tops of New Zealand with our guided tours. Take in the majestic scenary and witness beauty."
        />
+       
     </div>
   );
 }

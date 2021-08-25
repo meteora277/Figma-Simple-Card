@@ -21,7 +21,7 @@ const StyledCard = Styled.div`
 
     img{
         width: 262px;
-        height: 250px;
+        height: 262px;
         border-radius: 8px;
     }
     h2{
