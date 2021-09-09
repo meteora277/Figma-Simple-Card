@@ -1,8 +1,6 @@
-
-import React from 'react';
-import Styled from 'styled-components'
-import mountain from "./mountain.jpg"
-
+import React from "react";
+import Styled from "styled-components";
+import mountain from "./mountain.jpg";
 
 const StyledCard = Styled.div`
 
@@ -44,15 +42,15 @@ const StyledCard = Styled.div`
         letter-spacing: 0em;
         text-align: left;
     }
-`
+`;
 
 const Card = (props) => (
-    <StyledCard>
-        <img src={mountain} alt="a mountain"/>
-        <div>
-            <h2>{props.title}</h2>
-            <p>{props.content}</p>
-        </div>
-    </StyledCard>
-)
-export default Card
+  <StyledCard>
+    <img src={mountain} alt="a mountain" />
+    <div>
+      <h2>{props.title}</h2>
+      <p>{props.content}</p>
+    </div>
+  </StyledCard>
+);
+export default Card;
